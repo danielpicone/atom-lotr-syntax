@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "description": "Lord of the Rings based theme",
   "keywords": [
+    "lord",
+    "rings",
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/lotr-syntax",
+  "repository": "https://github.com/danielpicone/atom-lotr-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
