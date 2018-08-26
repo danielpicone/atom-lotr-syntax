@@ -22,7 +22,6 @@ atom-text-editor {
   }
 
   .gutter {
-    // background-color: @syntax-gutter-background-color;
     background-color: @syntax-gutter-background-color;
   }
 
@@ -104,6 +103,16 @@ atom-text-editor {
   &.syntax--numeric {
     color: @mirkwood-green;
   }
+}
+
+.syntax--punctuation,
+.syntax--bracket,
+.syntax--brace {
+  color: @gandalf-grey;
+}
+
+.syntax--string .syntax--punctuation {
+  color: @mirkwood-green;
 }
 
 .syntax--entity {
@@ -240,7 +249,6 @@ atom-text-editor {
 
 .editor {
     .cursor-line {
-        // background-color: fadeout(lighten(@palantir-purple,10%),40%);
         background-color: fadeout(lighten(@palantir-purple,30%),70%);
     }
 }
@@ -256,15 +264,12 @@ atom-text-editor {
 
 
 
-// @normal-color: @text-color-info;
 @normal-color: @sting-blue;
-// @insert-color: @text-color-success;
 @insert-color: @hobbiton-green;
-// @visual-color: @text-color-warning;
-@visual-color: lighten(@mount-doom-red,20%);
+// @visual-color: @light-mount-doom-red;
+@visual-color: @mount-doom-red;
 @operator-color: @laurelin-gold;
 @status-bar-color: @base-background-color;
-// @status-bar-color: #111;
 
 .status-bar-mixin(@mode-color) {
   color: @status-bar-color;
@@ -303,7 +308,7 @@ atom-text-editor {
   .status-bar-mixin(@visual-color);
 }
 
-/* Custom Styles for operator pending mode go here */
+/* Custom Styles for Operator Pending mode go here */
 .status-bar-vim-mode-plus-operator-pending {
   .status-bar-mixin(@operator-color);
 }
